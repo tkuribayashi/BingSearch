@@ -11,12 +11,12 @@ import com.fasterxml.jackson.core.*;
    return: ArrayList of Urls
 */
 public class BingSearch {
-    public static ArrayList<String> SearchUrls(final String title) throws Exception {
+    public static ArrayList<String> SearchUrls(final String arg) throws Exception {
     	ArrayList<String> urls = new ArrayList<String>();
     	//Bing Search API URL
     	String url = "https://api.datamarket.azure.com/Bing/Search/Web";
     	//query text
-    	String query = new String("\'\""+ title + "\"\'");
+    	String query = new String("\'\""+ arg + "\"\'");
     	//API key
     	final String key = "YOUR KEY";
     	//response format (xml or json)
